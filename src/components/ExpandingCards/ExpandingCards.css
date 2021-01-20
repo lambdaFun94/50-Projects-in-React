@@ -1,0 +1,13 @@
+.expanding-cards {
+  display: flex;
+  height: 80%;
+  width: 90vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .expanding-cards {
+    width: 100vw;
+  }
+}
