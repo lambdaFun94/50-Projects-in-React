@@ -1,5 +1,6 @@
 import "./App.css";
 import ExpandingCards from "./components/ExpandingCards/ExpandingCards";
+import ProgressBar from "./components/ProgressSteps/ProgressBar";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <h3> Project One</h3>
         <h4> Expanding Cards</h4>
         <ExpandingCards />
+        <ProgressBar />
       </section>
     </div>
   );
