@@ -5,6 +5,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  z-index: 10;
 }
 
 .progress-bar {
@@ -28,7 +29,7 @@
   top: 50%;
   left: 3px;
   transform: translateY(-50%);
-  z-index: -10;
+  z-index: 5;
 }
 
 .progress {
@@ -40,21 +41,23 @@
   max-width: 340px;
   width: 0%;
   transform: translateY(-50%);
-  z-index: -10;
+  z-index: 7;
   transition: 0.4s ease;
 }
 
 .bubble {
   background-color: #fff;
   color: #999;
+  font-size: 15px;
   border-radius: 50%;
   height: 30px;
-  width: 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 30px;
   border: 3px solid #e0e0e0;
   transition: 0.4s ease;
+  z-index: 10;
 }
 
 .active {

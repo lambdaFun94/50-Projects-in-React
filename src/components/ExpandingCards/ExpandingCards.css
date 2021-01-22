@@ -1,6 +1,6 @@
 .expanding-cards {
   display: flex;
-  height: 80%;
+  height: 100%;
   width: 90vw;
   justify-content: flex-end;
   align-items: center;
