@@ -1,12 +1,12 @@
 import React from "react";
-import "./Card.css";
+import style from "./Card.module.css";
 
 const Card = ({ content, title }) => (
-  <div className="card">
-    <div className="header">
-      <h1>{title}</h1>
+  <div className={style.card}>
+    <div className={style.heading}>
+      <h2>{title}</h2>
     </div>
-    <div className="content">{content}</div>
+    <div className={style.content}>{content}</div>
   </div>
 );
 

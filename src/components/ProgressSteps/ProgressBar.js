@@ -39,7 +39,9 @@ const ProgressBar = () => {
     });
 
     return labels.map((label) => (
-      <div className={`bubble ${label.active}`}>{label.text}</div>
+      <div key={label.text} className={`bubble ${label.active}`}>
+        {label.text}
+      </div>
     ));
   };
 

@@ -2,8 +2,6 @@
 
 .card {
   display: flex;
-  font-family: "Inknut Antiqua", serif;
-  font-size: 25px;
   font-weight: 300;
   flex-direction: column;
   align-items: center;
@@ -13,9 +11,18 @@
   box-shadow: 3px 3px 5px 6px #ccc;
   background-color: #bab2b5;
   color: white;
-  z-index: -100;
+  max-width: 95vw;
+  padding: 20px 10px;
 }
 
-h1 {
-  margin: 20px 0px;
+.heading h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }

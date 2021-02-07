@@ -9,7 +9,7 @@ const Panel = ({ item, onClick }) => {
 
   let classes = "panel";
   classes += active ? " panel-active" : "";
-  console.log(title);
+
   return (
     <div key={key} onClick={onClick} className={classes} style={style}>
       <h3>{title}</h3>

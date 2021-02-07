@@ -53,7 +53,11 @@ const ExpandingCards = () => {
 
   const renderPanels = () => {
     return active.map((image) => (
-      <Panel onClick={() => toggleActive(image.id)} item={image} />
+      <Panel
+        key={image.title}
+        onClick={() => toggleActive(image.id)}
+        item={image}
+      />
     ));
   };
 

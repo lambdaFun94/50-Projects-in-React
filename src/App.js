@@ -1,7 +1,9 @@
 import "./App.css";
+import Card from "./components/Card";
 import ExpandingCards from "./components/ExpandingCards/ExpandingCards";
 import ProgressBar from "./components/ProgressSteps/ProgressBar";
-import Card from "./components/Card";
+import HiddenSearch from "./components/HiddenSearch/HiddenSearch";
+import BlurryLoading from "./components/BlurryLoading/BlurryLoading";
 
 function App() {
   const projects = [
@@ -13,11 +15,23 @@ function App() {
       title: "Progress Steps",
       component: <ProgressBar />,
     },
+    {
+      title: "Hidden Search",
+      component: <HiddenSearch />,
+    },
+    {
+      title: "",
+      component: <BlurryLoading />,
+    },
   ];
 
   const renderProjects = () => {
     return projects.map((project) => (
-      <Card title={project.title} content={project.component} />
+      <Card
+        key={project.title}
+        title={project.title}
+        content={project.component}
+      />
     ));
   };
 
